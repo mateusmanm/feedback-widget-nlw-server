@@ -4,7 +4,7 @@ import cors from 'cors'
 
 const app = express();
 
-var whitelist = ['https://feedback-widget-nlw-server-production.up.railway.app/']
+var whitelist = ['https://feedback-widget-nlw-web.vercel.app']
 var corsOptions = {
     origin: function (origin: any, callback: any) {
         if (whitelist.indexOf(origin) !== -1) {
